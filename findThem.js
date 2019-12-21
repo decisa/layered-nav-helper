@@ -63,7 +63,7 @@ function findWidths(el) {
 }
 
 function splitToNumbers(str){
-  const regValues = /(\d+\.?\d+)/g;
+  const regValues = /(\d+\.?\d*)/g;
   return str.match(regValues).map(x => parseFloat(x));  
 }
 
